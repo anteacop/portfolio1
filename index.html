@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Antea Cop – Portfolio</title>
+<style>
+/* FONT */
+@font-face {
+  font-family: "AnteaCop";
+  src: url("AnteaCop.ttf") format("truetype");
+}
+
+/* OSNOVNI STILOVI */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a40; /* zamijeni s bilo kojom bojom koju želiš */
+  color: white;
+  font-family: "AnteaCop", sans-serif;
+  text-align: center;
+}
+
+/* NASLOV */
+h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* NAVIGACIJA */
+ul {
+  padding: 20px;
+  margin: 20px auto;
+  width: 500px;
+  list-style: none;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 15px 25px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid white;
+  border-radius: 8px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+li a:hover {
+  text-decoration: underline;
+}
+
+/* GALERIJA */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 10%;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* PODNASLOVI */
+section h2 {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* O MENI */
+.about {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 12px;
+}
+
+/* Social icons */
+.social {
+  display: flex;
+  gap: 12px;
+  justify-content: center; /* ili flex-start / flex-end po potrebi */
+  align-items: center;
+  margin: 20px 0;
+}
+
+.social-link {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.06); /* blagi okvir iza ikone */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.18s ease, background-color 0.18s ease;
+  color: white; /* ikona nasljeđuje ovu boju (currentColor) */
+  border: 2px solid transparent;
+}
+
+.social-link:focus,
+.social-link:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255,255,255,0.12);
+  border-color: IndianRed; /* možeš promijeniti u boju brand-a */
+  outline: none;
+}
+
+/* Ako želiš različite boje za svaku mrežu, možeš dodati klase i override boje */
+.social-link.instagram { color: #E1306C; } /* primjer */
+.social-link.tiktok    { color: #000000;  } /* primjer */
+</style>
+</head>
+<body>
+
+<h1>Antea Čop</h1>
+
+<ul>
+  <li><a href="o meni.html">O meni</a></li>
+   <li><a href="koncerti.html">Koncerti</a></li>
+  <li><a href="photoshoot.html">Photoshoot</a></li>
+  <li><a href="street photography.html">Street Photography</a></li>
+</ul>
+
+<section class="about">
+ 
+  <p>Bok! Ja sam Antea Čop, fotograf i grafički dizajner. Dobrodošli na moj portfolio!</p>
+</section>
+
+<section class="gallery">
+  <h2>Pronadi me:</h2>
+ <!-- SOCIAL ICONS -->
+<div class="social">
+  <a class="social-link" href="https://www.instagram.com/fotkeodantee/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (otvara se u novom tabu)">
+    <!-- Instagram SVG -->
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.2-3.6a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 18.2 4.6zM12 10.6A1.4 1.4 0 1 1 10.6 12 1.4 1.4 0 0 1 12 10.6z"/>
+    </svg>
+  </a>
+
+  <a class="social-link" href="https://www.tiktok.com/@anteacopp" target="_blank" rel="noopener noreferrer" aria-label="TikTok (otvara se u novom tabu)">
+    <!-- TikTok SVG -->
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M16.5 3.5v6.2a4.9 4.9 0 0 1-4.9-4.9H9.5v10.6A4.9 4.9 0 1 1 4.6 5.5v.8a6.5 6.5 0 1 0 11.9 4.1V3.5z"/>
+    </svg>
+  </a>
+</div>
+</section>
+
+</body>
+</html>

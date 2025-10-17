@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>O meni – Antea Čop</title>
+<style>
+/* OSNOVNI STILOVI */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a40; /* jednobojna pozadina */
+  color: white;
+  font-family: Arial, sans-serif; /* standardni font */
+  text-align: center;
+}
+
+/* NASLOV */
+h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* NAVIGACIJA */
+ul {
+  padding: 20px;
+  margin: 20px auto;
+  width: 700px;
+  list-style: none;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 15px 25px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid IndianRed;
+  border-radius: 8px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+li a:hover {
+  text-decoration: underline;
+}
+
+/* KONTAINER ZA TEKST I SLIKU */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  margin: 40px auto;
+  justify-content: center;
+}
+
+/* SLIKA */
+.about-container img {
+  width: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* TEKST */
+.about-text {
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* NASLOV UNUTAR SEKCIJE */
+.about-text h2 {
+  margin-top: 0;
+  font-size: 36px;
+  color: IndianRed;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 30px 0;
+}
+.social-link {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.06);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.18s ease, background-color 0.18s ease;
+  color: white;
+  border: 2px solid transparent;
+}
+.social-link:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255,255,255,0.12);
+  border-color: IndianRed;
+}
+</style>
+</head>
+<body>
+
+<h1>Antea Čop</h1>
+
+<!-- NAVIGACIJA -->
+<ul>
+  <li><a href="index.html">Početna</a></li>
+   <li><a href="o meni.html">O meni</a></li>
+  <li><a href="koncerti.html">Koncerti</a></li>
+  <li><a href="photoshoot.html">Photoshoot</a></li>
+  <li><a href="street photography.html">Street Photography</a></li>
+</ul>
+
+<!-- O MENI SEKCIJA -->
+<div class="about-container">
+  <img src="images/fotka1.jpg" alt="Antea Čop">
+  <div class="about-text">
+    <h2>Bok! Ja sam Antea Čop</h2>
+    <p>Studiram na grafičkom fakultetu i bavim se fotografiranjem i editiranjem. Fotografija mi je oduvijek privlačila pozornost – od gledanja tuđih slika, do snimanja i uređivanja vlastitih. Do sada sam sudjelovala na raznim radionicama, eventima i koncertima.</p>
+    <p>Moja strast prema fotografiji uključuje različite stilove – od portreta i street fotografije, do snimanja koncertnih i event fotografija. Svaka fotografija je priča koju želim prenijeti gledatelju kroz svoj objektiv i kreativnu obradu.</p>
+    <p>Cilj mi je konstantno razvijati svoj stil i tehnike te dijeliti svoj rad s publikom i kolegama.</p>
+  </div>
+</div>
+
+<!-- SOCIAL ICONS -->
+<div class="social">
+  <a class="social-link" href="https://www.instagram.com/fotkeodantee/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.2-3.6a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 18.2 4.6zM12 10.6A1.4 1.4 0 1 1 10.6 12 1.4 1.4 0 0 1 12 10.6z"/>
+    </svg>
+  </a>
+
+  <a class="social-link" href="https://www.tiktok.com/@anteacopp" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+    <svg viewBox="0 0 256 256" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+      <path fill="currentColor" d="M128 0c-70.7 0-128 57.3-128 128s57.3 128 128 128 128-57.3 128-12
